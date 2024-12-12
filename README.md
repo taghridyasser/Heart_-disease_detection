@@ -1,2 +1,2 @@
-# Heart_-disease_detection
+# Heart_disease_detection
 heart disease detection system deployed using streamlit
