@@ -22,7 +22,7 @@ import pandas as pd
 #loaded_model = joblib.load(open('best_xgb_model_pipeline.pkl', 'rb'))
 
 # Load the trained model pipeline
-loaded_model = joblib.load(open('https://github.com/taghridyasser/Heart_-disease_detection/blob/main/best_xgb_model_pipeline.pkl', 'rb'))
+loaded_model = joblib.load(open('https://github.com/taghridyasser/Heart_-disease_detection/row/main/best_xgb_model_pipeline.pkl', 'rb'))
 # Function for prediction
 def heart_disease_detection(input_data):
     # Make the prediction
