@@ -8,21 +8,21 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-import requests
+#import requests
 
 # Correct URL for the raw file
-url = "https://github.com/taghridyasser/Heart_-disease_detection/blob/main/best_xgb_model_pipeline.pkl"
+#url = "https://github.com/taghridyasser/Heart_-disease_detection/blob/main/best_xgb_model_pipeline.pkl"
 
 # Download the file
-response = requests.get(url)
-with open('best_xgb_model_pipeline.pkl', 'wb') as f:
-    f.write(response.content)
+#response = requests.get(url)
+#with open('best_xgb_model_pipeline.pkl', 'wb') as f:
+   # f.write(response.content)
 
 # Load the model
-loaded_model = joblib.load(open('best_xgb_model_pipeline.pkl', 'rb'))
+#loaded_model = joblib.load(open('best_xgb_model_pipeline.pkl', 'rb'))
 
 # Load the trained model pipeline
-#loaded_model = joblib.load(open('https://github.com/taghridyasser/Heart_-disease_detection/blob/main/best_xgb_model_pipeline.pkl', 'rb'))
+loaded_model = joblib.load(open('https://github.com/taghridyasser/Heart_-disease_detection/blob/main/best_xgb_model_pipeline.pkl', 'rb'))
 # Function for prediction
 def heart_disease_detection(input_data):
     # Make the prediction
